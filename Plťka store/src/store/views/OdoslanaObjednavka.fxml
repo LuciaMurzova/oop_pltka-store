@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CadetBlue;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store.controllers.OdoslanaObjednavkaController">
+   <children>
+      <Label layoutX="109.0" layoutY="120.0" text="Ďakujeme za Vašu objednávku!">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="spat" layoutX="153.0" layoutY="180.0" mnemonicParsing="false" onAction="#prejdiSpat" style="-fx-background-color: black;" text="Prejsť na úvodnú obrazovku" textFill="#d9d5d5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+	  </Button>
+      <ImageView fitHeight="82.0" fitWidth="300.0" layoutY="318.0" pickOnBounds="true">
+         <image>
+            <Image url="@../obrazky/vlny.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="300.0" layoutX="300.0" layoutY="318.0" pickOnBounds="true">
+         <image>
+            <Image url="@../obrazky/vlny.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

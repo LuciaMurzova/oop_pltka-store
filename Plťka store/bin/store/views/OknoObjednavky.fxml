@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: CadetBlue;" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store.controllers.OknoObjednavkyController">
+   <children>
+      <Label layoutX="156.0" layoutY="31.0" text="Vytvorenie novej objednávky" underline="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelKat" layoutX="72.0" layoutY="85.0" text="Kategória:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDisc" layoutX="72.0" layoutY="128.0" text="Disciplína:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPrednostna" layoutX="72.0" layoutY="172.0" text="Prednostná objednávka:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="300.0" layoutY="318.0">
+         <image>
+            <Image url="@../obrazky/vlny.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="300.0" layoutX="300.0" layoutY="318.0">
+         <image>
+            <Image url="@../obrazky/vlny.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="katText" layoutX="172.0" layoutY="86.0" promptText="kanoe / kajak" />
+      <TextField fx:id="discText" layoutX="172.0" layoutY="130.0" promptText="slalom / zjazd / sprint" />
+      <TextField fx:id="prednostnaText" layoutX="284.0" layoutY="174.0" promptText="ano / nie" />
+      <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Zrušenie objednávky">
+            <items>
+              <MenuItem fx:id="zrusit" mnemonicParsing="false" onAction="#zrusObjednavku" text="Zrušiť" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Nová objednávka">
+            <items>
+              <MenuItem fx:id="vytvorit" mnemonicParsing="false" onAction="#vytvorObjednavku" text="Vytvoriť" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="odoslanie" layoutX="72.0" layoutY="234.0" mnemonicParsing="false" onAction="#odosliObjednavku" style="-fx-background-color: black;" text="Odoslať objednávku" textFill="#bebebe">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="zleUdaje" layoutX="72.0" layoutY="288.0" prefHeight="20.0" prefWidth="31.0" textFill="#a80303">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
